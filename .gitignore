@@ -1,2 +1,4 @@
 .idea
 /vendor
+*.com-access_log
+*.com-error.log
