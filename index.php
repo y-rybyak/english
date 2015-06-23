@@ -28,7 +28,7 @@ $app->post('/', function () use ($app, $mailer) {
     $resultEmail = $app->view->fetch('email/test.php');
     $message = Swift_Message::newInstance('Результат тестирования')
         ->setFrom('entestrobomail@gmail.com')
-        ->setTo([/*'anastasia.kavetska@gmail.com', */'y4@miritec.com'])
+        ->setTo(['teacher01@gmail.com', 'teacher02@miritec.com'])
         ->setBody($resultEmail)
         ->setContentType("text/html");
     $mailer->send($message);
