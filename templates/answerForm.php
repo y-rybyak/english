@@ -856,6 +856,5 @@
                     <input type="text" class="form-control" name="testNumber" id="testNumber" placeholder="Введите номер телефона">
                     <label><input type="radio" name="" value="4" checked hidden></label>
                 </div>
-                <button class="btn btn-default" type="submit">Узнать результат</button>
-                <br/>
+                <button class="btn btn-default" type="submit">Узнать результат</button><br/>
             </form>
