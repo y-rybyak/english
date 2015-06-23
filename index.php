@@ -10,7 +10,7 @@ $mailer = Swift_Mailer::newInstance($transport);
 $app = new \Slim\Slim;
 
 $app->config([
-    'debug' => true,
+    'debug' => false,
     'templates.path', 'templates',
 ]);
 
