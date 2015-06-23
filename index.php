@@ -10,7 +10,7 @@ $mailer = Swift_Mailer::newInstance($transport);
 $app = new \Slim\Slim;
 
 $app->config([
-    'debug' => true,
+    'debug' => false,
     'templates.path', 'templates',
 ]);
 
@@ -28,7 +28,7 @@ $app->post('/', function () use ($app, $mailer) {
     $resultEmail = $app->view->fetch('email/test.php');
     $message = Swift_Message::newInstance('Результат тестирования')
         ->setFrom('entestrobomail@gmail.com')
-        ->setTo(['anastasia.kavetska@gmail.com', 'y4@miritec.com'])
+        ->setTo([/*'anastasia.kavetska@gmail.com', */'y4@miritec.com'])
         ->setBody($resultEmail)
         ->setContentType("text/html");
     $mailer->send($message);
